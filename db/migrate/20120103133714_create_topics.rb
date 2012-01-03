@@ -1,11 +1,11 @@
 class CreateTopics < ActiveRecord::Migration
   def change
     create_table :topics do |t|
-      t.string :title
-      t.references :node
-      t.text :body
-      t.references :user
-      t.integer :replies_count
+      t.string :title, :null => false
+      t.references :node, :null => false
+      t.text :body, :null => false
+      t.references :user, :null => false
+      t.integer :replies_count, :null => false, :default => 0
       t.integer :last_reply_user_id
       t.datatime :replied_at
       t.string :source
