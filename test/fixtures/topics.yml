@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  node: 
+  body: MyText
+  user: 
+  replies_count: 1
+  last_reply_user_id: 1
+  replied_at: 
+  source: MyString
+
+two:
+  title: MyString
+  node: 
+  body: MyText
+  user: 
+  replies_count: 1
+  last_reply_user_id: 1
+  replied_at: 
+  source: MyString

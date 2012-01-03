@@ -1,4 +1,6 @@
 Bbs::Application.routes.draw do
+  resources :topics
+
   resources :nodes
 
   resources :sections
