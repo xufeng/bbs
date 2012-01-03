@@ -1,4 +1,6 @@
 Bbs::Application.routes.draw do
+  resources :sections
+
   resources :users
 
   # The priority is based upon order of creation:
