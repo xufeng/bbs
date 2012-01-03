@@ -1,4 +1,6 @@
 Bbs::Application.routes.draw do
+  resources :counters
+
   resources :replies
 
   resources :topics
