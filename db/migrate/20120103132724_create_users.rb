@@ -10,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :avatar_file_name
       t.integer :state, :null => false, :default => 1
       t.string :qq
-      t.datatime :last_logined_at
+      t.datetime :last_logined_at
       t.string :tagline
 
       t.timestamps
