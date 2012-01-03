@@ -7,7 +7,7 @@ class CreateTopics < ActiveRecord::Migration
       t.references :user, :null => false
       t.integer :replies_count, :null => false, :default => 0
       t.integer :last_reply_user_id
-      t.datatime :replied_at
+      t.datetime :replied_at
       t.string :source
 
       t.timestamps
