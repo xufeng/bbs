@@ -1,0 +1,21 @@
+<h1>Listing cpanel_homes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cpanel_homes.each do |cpanel_home| %>
+  <tr>
+    <td><%= link_to 'Show', cpanel_home %></td>
+    <td><%= link_to 'Edit', edit_cpanel_home_path(cpanel_home) %></td>
+    <td><%= link_to 'Destroy', cpanel_home, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Home', new_cpanel_home_path %>
