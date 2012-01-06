@@ -1,4 +1,4 @@
-class TopicsController < ApplicationController
+class Cpanel::TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
   def index
