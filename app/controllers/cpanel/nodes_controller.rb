@@ -1,4 +1,4 @@
-class NodesController < ApplicationController
+class Cpanel::NodesController < ApplicationController
   # GET /nodes
   # GET /nodes.json
   def index

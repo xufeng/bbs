@@ -76,7 +76,7 @@ class Cpanel::UsersController < ApplicationController
     @user.destroy
 
     respond_to do |format|
-      format.html { redirect_to users_url }
+      format.html { redirect_to cpanel_users_url }
       format.json { head :ok }
     end
   end

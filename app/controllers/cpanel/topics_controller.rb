@@ -44,7 +44,7 @@ class Cpanel::TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.save
-        format.html { redirect_to @topic, notice: 'Topic was successfully created.' }
+        format.html { redirect_to cpanel_topics_path, notice: 'Topic was successfully created.' }
         format.json { render json: @topic, status: :created, location: @topic }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class Cpanel::TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.update_attributes(params[:topic])
-        format.html { redirect_to @topic, notice: 'Topic was successfully updated.' }
+        format.html { redirect_to cpanel_topics_path, notice: 'Topic was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
@@ -76,7 +76,7 @@ class Cpanel::TopicsController < ApplicationController
     @topic.destroy
 
     respond_to do |format|
-      format.html { redirect_to topics_url }
+      format.html { redirect_to cpanel_topics_url }
       format.json { head :ok }
     end
   end
